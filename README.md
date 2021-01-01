@@ -27,4 +27,4 @@ To start, stop, restart, or check the status of the ts3-server use
 sudo systemctl {start|stop|restart|status} ts3server 
 ```
 
-# If you need any help, you can open an issue or contact me on Discord: Vesk0#4059
+## If you need any help, you can open an issue or contact me on Discord: Vesk0#4059
