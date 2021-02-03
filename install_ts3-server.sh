@@ -2,7 +2,7 @@
 
 TS3_USER="teamspeak"
 TS3_DIR="/opt/ts3server"
-TS3_VER="3.12.1"
+TS3_VER="3.13.3"
 MAIN_DIR="/root"
 X86="https://files.teamspeak-services.com/releases/server/$TS3_VER/teamspeak3-server_linux_x86-$TS3_VER.tar.bz2"
 X64="https://files.teamspeak-services.com/releases/server/$TS3_VER/teamspeak3-server_linux_amd64-$TS3_VER.tar.bz2"
