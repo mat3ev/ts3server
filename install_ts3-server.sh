@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TS3_USER="teamspeak"
-TS3_DIR="/opt/ts3server"
+TS3_DIR="/home/teamspeak"
 TS3_VER="3.13.3"
 MAIN_DIR="/root"
 X86="https://files.teamspeak-services.com/releases/server/$TS3_VER/teamspeak3-server_linux_x86-$TS3_VER.tar.bz2"
@@ -47,8 +47,8 @@ else
 fi
 
 # systemd file
-touch /etc/systemd/system/ts3server.service
-cat > /etc/systemd/system/ts3server.service <<EOF
+touch /etc/systemd/system/teamspeak.service
+cat > /etc/systemd/system/teamspeak.service <<EOF
 [Unit]
 Description=TeamSpeak3 Server
 Wants=network-online.target
@@ -88,8 +88,8 @@ EOF
 chown "$TS3_USER":"$TS3_USER" "$TS3_DIR"/ts3server.ini
 
 echo "Starting the TeamSpeak 3 server"
-systemctl --quiet enable ts3server.service
-systemctl start ts3server.service
+systemctl --quiet enable teamspeak.service
+systemctl start teamspeak.service
 sleep 5
 
 EXTERNAL_IP=$(wget -qO - http://geoip.ubuntu.com/lookup | sed -n -e 's/.*<Ip>\(.*\)<\/Ip>.*/\1/p')
