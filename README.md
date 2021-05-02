@@ -8,7 +8,7 @@
 ### How to use:
 Download or copy the script and paste it into a new file
 ```bash
-wget https://raw.githubusercontent.com/rcguy/install_ts3-server/master/install_ts3-server.sh
+wget https://raw.githubusercontent.com/mat3ev/ts3server/master/install_ts3-server.sh
 ```
 Change the user variables if you want
 ```bash
@@ -24,7 +24,7 @@ sudo ./install_ts3-server.sh
 ```
 To start, stop, restart, or check the status of the ts3-server use
 ```bash
-sudo systemctl {start|stop|restart|status} ts3server 
+sudo systemctl {start|stop|restart|status} teamspeak 
 ```
 
 ## If you need any help, you can open an issue or contact me on Discord: Vesk0#4059
